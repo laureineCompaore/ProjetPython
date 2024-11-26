@@ -17,6 +17,9 @@ import json
 import requests
 import time
 
+#load_dotenv()  # Charge les variables d'environnement du fichier .env
+
+#APPLICATION_ID= os.getenv("APPLICATION_ID")
 
 logging.captureWarnings(True)
 # Example of a Python implementation for a continuous authentication client.
@@ -98,6 +101,7 @@ def gener_data(datedebut,datefin):
      return client.request('GET',"https://public-api.meteofrance.fr/public/DPClim/v1/commande/fichier?id-cmde={}".format(gener_idcommande(datedebut,datefin)),verify=False)
 
 
+#fonction pour représenter la carte
 def interactive_map_dpe(dpe):
 
     center = dpe[["lat", "lon"]].mean().values.tolist()
