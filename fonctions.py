@@ -102,6 +102,7 @@ def gener_data(datedebut,datefin):
 
 
 #fonction pour représenter la carte
+
 def interactive_map_dpe(dpe):
 
     center = dpe[["lat", "lon"]].mean().values.tolist()
