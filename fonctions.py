@@ -19,6 +19,21 @@ import time
 import calendar
 import datetime
 
+#Bibliothèques nécessaires pour la visualisation:
+
+import numpy as np
+import pandas as pd
+
+# Data Visualisation Libraries
+import matplotlib.pyplot as plt
+#%config InlineBackend.figure_format = 'retina'
+
+#!pip install seaborn --upgrade
+import seaborn as sns
+#sns.set_style('darkgrid')
+
+from scipy.stats.mstats import winsorize
+
 #load_dotenv()  # Charge les variables d'environnement du fichier .env
 
 #APPLICATION_ID= os.getenv("APPLICATION_ID")
@@ -147,17 +162,3 @@ def generate_month_matrix(year):
 
 
 
-#Bibliothèques nécessaires pour la visualisation:
-
-import numpy as np
-import pandas as pd
-
-# Data Visualisation Libraries
-import matplotlib.pyplot as plt
-#%config InlineBackend.figure_format = 'retina'
-
-#!pip install seaborn --upgrade
-import seaborn as sns
-#sns.set_style('darkgrid')
-
-from scipy.stats.mstats import winsorize
