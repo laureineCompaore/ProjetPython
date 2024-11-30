@@ -144,3 +144,18 @@ def generate_month_matrix(year):
 
     
     return month_matrix
+
+
+
+#Bibliothèques nécessaires pour la visualisation:
+
+import numpy as np
+import pandas as pd
+
+# Data Visualisation Libraries
+import matplotlib.pyplot as plt
+#%config InlineBackend.figure_format = 'retina'
+
+#!pip install seaborn --upgrade
+import seaborn as sns
+#sns.set_style('darkgrid')
