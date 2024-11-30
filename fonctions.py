@@ -16,6 +16,8 @@ import folium
 import json
 import requests
 import time
+import calendar
+import datetime
 
 #load_dotenv()  # Charge les variables d'environnement du fichier .env
 
@@ -71,6 +73,7 @@ class Client(object):
         token = access_token_response.json()['access_token']
         # Update session with fresh token
         self.session.headers.update({'Authorization': 'Bearer %s' % token})
+        time.sleep(5)
 
 client = Client()
  # Issue a series of API requests an example. For use this test, you must first subscribe to the arome api with your application
@@ -96,9 +99,7 @@ def gener_idcommande(datedebut,datefin):
 
 #focntion pour générer une base de données en choisissant les dates 
 
-def gener_data(datedebut,datefin):
-     client=Client()
-     return client.request('GET',"https://public-api.meteofrance.fr/public/DPClim/v1/commande/fichier?id-cmde={}".format(gener_idcommande(datedebut,datefin)),verify=False)
+
 
 
 #fonction pour représenter la carte
@@ -123,3 +124,23 @@ def interactive_map_dpe(dpe):
     m.fit_bounds([sw, ne])
 
     return m
+
+
+def generate_month_matrix(year):
+    month_matrix = []
+    month_matrix.append((datetime.date(year,1,5),datetime.date(year,1,31)))
+    month_matrix.append((datetime.date(year,2,1),datetime.date(year,2,28)))
+    
+    for month in range(3, 13):
+        # Premier jour du mois à partir de février
+        start_date = datetime.date(year, month, 1)
+        
+        # Dernier jour du mois
+        last_day = calendar.monthrange(year, month)[1]
+        end_date = datetime.date(year, month, last_day)
+        
+        # Ajouter les dates au tableau
+        month_matrix.append((start_date, end_date))
+
+    
+    return month_matrix
