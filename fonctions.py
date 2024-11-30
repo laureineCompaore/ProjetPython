@@ -159,3 +159,5 @@ import matplotlib.pyplot as plt
 #!pip install seaborn --upgrade
 import seaborn as sns
 #sns.set_style('darkgrid')
+
+from scipy.stats.mstats import winsorize
