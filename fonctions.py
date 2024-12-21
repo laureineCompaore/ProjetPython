@@ -1,6 +1,7 @@
 #Importation des bibliothèques
 
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
+from sklearn.impute import SimpleImputer
 import os
 import sys
 import requests
@@ -33,6 +34,8 @@ import seaborn as sns
 #sns.set_style('darkgrid')
 
 from scipy.stats.mstats import winsorize
+
+from sklearn.impute import SimpleImputer
 
 #load_dotenv()  # Charge les variables d'environnement du fichier .env
 
