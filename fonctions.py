@@ -34,6 +34,8 @@ import seaborn as sns
 
 from scipy.stats.mstats import winsorize
 
+from sklearn.impute import SimpleImputer
+
 #load_dotenv()  # Charge les variables d'environnement du fichier .env
 
 #APPLICATION_ID= os.getenv("APPLICATION_ID")
