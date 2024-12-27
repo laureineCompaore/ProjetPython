@@ -163,4 +163,5 @@ def generate_month_matrix(year):
     return month_matrix
 
 
-
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
