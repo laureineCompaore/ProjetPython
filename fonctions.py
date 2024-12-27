@@ -19,6 +19,7 @@ import time
 import calendar
 import datetime
 
+
 #Bibliothèques nécessaires pour la visualisation:
 
 import numpy as np
@@ -165,3 +166,8 @@ def generate_month_matrix(year):
 
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
+from statsmodels.tsa.seasonal import STL
+from statsmodels.graphics.tsaplots import plot_acf
+from statsmodels.graphics.tsaplots import plot_pacf
+import matplotlib.pyplot as plt
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
