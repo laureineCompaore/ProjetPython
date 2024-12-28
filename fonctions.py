@@ -172,3 +172,7 @@ from sklearn.preprocessing import StandardScaler
 from tensorflow import keras
 from tensorflow import nn
 import statsmodels.api as sm
+
+#Compilation du main
+import nbformat
+from nbconvert.preprocessors import ExecutePreprocessor
