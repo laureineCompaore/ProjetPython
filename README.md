@@ -82,7 +82,7 @@ Le projet est composé de trois notebooks jupyter, soit trois grandes parties :
 2. `Récupération des données` : qui constitue la base du projet, l'objectif est de construire le jeu de données qu'on souhaite manipuler dans les autres parties.
 3. `Analyse_Exploratoire&Statistiques_descriptives` : il s'agit de la visualisation et de la description des données.
 4. `Modélisation_finale` : pour tester empiriquement les différents modèles utilisés pour prédire la température.
-5. `Rapport_final` : Contient une description globale du projet et des différentes variables de la base.
+5. `Rapport_final` : Contient une description globale du projet, de la démarche scientifique utilisée et des différentes variables de la base.
 6. `Requirements` : pour créer le tableau des packages dans le fichier texte requirements.
 
 ## Comment exécuter le projet ?
