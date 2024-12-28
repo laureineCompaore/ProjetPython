@@ -20,6 +20,7 @@ import time
 import calendar
 import datetime
 
+
 # Importation des Bibliothèques pour le random Forest
 
 from sklearn.ensemble import RandomForestRegressor
@@ -180,4 +181,20 @@ def generate_month_matrix(year):
     return month_matrix
 
 
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+from statsmodels.tsa.seasonal import STL
+from statsmodels.graphics.tsaplots import plot_acf
+from statsmodels.graphics.tsaplots import plot_pacf
+import matplotlib.pyplot as plt
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 
+#Bibliothèques pour la modélisation:
+
+import matplotlib as mpl
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.preprocessing import StandardScaler
+from tensorflow import keras
+from tensorflow import nn
+import statsmodels.api as sm
