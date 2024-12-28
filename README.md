@@ -18,9 +18,9 @@ Nous disposons pour cela de bases de données **Open source** fournies par la Ba
 
 Pour mener à bien ce projet, nous nous sommes inspirés des travaux suivants : 
 
-- [1](https://pythonds.linogaliana.fr/) Lino Galiana(2024). Compréhension du travail attendu et apprentissage du travail sur Github
+- [1](https://pythonds.linogaliana.fr) Lino Galiana (2024). Compréhension du travail attendu et apprentissage du travail sur Github
 
-- [2]'https://public-api.meteofrance.fr/public/DPObs/v1/liste-stations) API, Météo France. L'extraction des données climatiques.
+- [2](https://public-api.meteofrance.fr/public/DPObs/v1/liste-stations) API, Météo France. L'extraction des données climatiques.
 
 - [3](https://www.kaggle.com/code/adrianograms/climate-prediction) Adriano Grams (2022). Prédiction du climat.
 
