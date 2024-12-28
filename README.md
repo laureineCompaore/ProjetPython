@@ -74,15 +74,16 @@ Les données utilisées dans ce projet proviennent de  :
 - `LICENSE/` pour protéger la propriété intellectuelle
 - `README.md/` pour mieux comprendre la vocation du projet,
 - `fonction.py/` contient toutes les bibliothèques utilisées pour l'analyse.
+- `requiments.txt/` contient un tableau avec tous les packages, leurs versions et leurs licences/
 
 Le projet est composé de trois notebooks jupyter, soit trois grandes parties : 
 
 1. `Main` : permet d'exécuter en même temps tous les NoteBooks(Temps d'exécution relativement long : environ 10 minutes).
-2. `Récupération des données` : qui constitue le coeur du projet, l'objectif est de construire le jeu de données qu'on souhaite manipuler dans les autres parties.
+2. `Récupération des données` : qui constitue la base du projet, l'objectif est de construire le jeu de données qu'on souhaite manipuler dans les autres parties.
 3. `Analyse_Exploratoire&Statistiques_descriptives` : il s'agit de la visualisation et de la description des données.
-4. `Modélisation_finale` : pour tester empiriquement les differents modèles utilisés pour prédire la température.
+4. `Modélisation_finale` : pour tester empiriquement les différents modèles utilisés pour prédire la température.
 5. `Rapport_final` : Contient une description globale du projet et des différentes variables de la base.
-6. `Requirements` : pour créer le tableau des packages dans LICENSE.
+6. `Requirements` : pour créer le tableau des packages dans le fichier texte requirements.
 
 ## Comment exécuter le projet ?
 
