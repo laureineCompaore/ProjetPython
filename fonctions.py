@@ -41,6 +41,7 @@ import pandas as pd
 
 import numpy as np
 import pandas as pd
+from matplotlib.ticker import MaxNLocator
 
 # Data Visualisation Libraries
 import matplotlib.pyplot as plt
