@@ -1,6 +1,7 @@
 #Importation des bibliothèques
 
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
+from sklearn.impute import SimpleImputer
 import os
 import sys
 import requests
@@ -20,10 +21,27 @@ import calendar
 import datetime
 
 
+# Importation des Bibliothèques pour le random Forest
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score, ConfusionMatrixDisplay
+from sklearn.model_selection import RandomizedSearchCV, train_test_split
+from scipy.stats import randint
+from sklearn.metrics import mean_absolute_percentage_error
+from sklearn.metrics import r2_score
+from sklearn.metrics import mean_absolute_error
+
+#Bibliothèques pour la visualisation des arbres
+from sklearn.tree import export_graphviz
+from IPython.display import Image
+import graphviz
+import pandas as pd
+
 #Bibliothèques nécessaires pour la visualisation:
 
 import numpy as np
 import pandas as pd
+from matplotlib.ticker import MaxNLocator
 
 # Data Visualisation Libraries
 import matplotlib.pyplot as plt
