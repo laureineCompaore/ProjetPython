@@ -15,13 +15,15 @@ Ce projet a pour objectif de construire un modèle de machine learning capable d
 
 **Prédiction de la température :** 
 
-Pour mener à bien ce projet, nous nous sommes inspirés des travaux suivants : 
+Pour mener à bien ce projet, nous nous sommes inspirés des sources suivantes : 
 
 - [1](https://pythonds.linogaliana.fr) Lino Galiana (2024). Compréhension du travail attendu et apprentissage du travail sur Github
 
-- [2](https://public-api.meteofrance.fr/public/DPObs/v1/liste-stations) API, Météo France. L'extraction des données climatiques.
+- [2]Cours de séries temporelle, Dr Souleymane Fofana , ENSAE Dakar, 2022/2023: Afin de mieux comprendre le projet vu qu'on a travaillé avec la température qui est ne série temporelle.
 
-- [3](https://www.kaggle.com/code/adrianograms/climate-prediction) Adriano Grams (2022). Prédiction du climat.
+- [3](https://chatgpt.com/) IA génératives : chatgpt(2024): Pour le brainstorming.
+
+- [4](https://www.kaggle.com/code/adrianograms/climate-prediction) Adriano Grams (2022). Prédiction du climat.
 
 ## Objectifs
 
@@ -74,7 +76,7 @@ Les données utilisées dans ce projet proviennent de  :
 - `LICENSE/` pour protéger la propriété intellectuelle
 - `README.md/` pour mieux comprendre la vocation du projet,
 - `fonction.py/` contient toutes les bibliothèques utilisées pour l'analyse.
-- `requiments.txt/` contient un tableau avec tous les packages, leurs versions et leurs licences/
+- `requirements.txt/` contient un tableau avec tous les packages, leurs versions et leurs licences/
 
 Le projet est composé de trois notebooks jupyter, soit trois grandes parties : 
 
