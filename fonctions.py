@@ -14,9 +14,6 @@ import geopandas as gpd
 from io import StringIO
 import seaborn as sns
 import folium
-import json
-import requests
-import time
 import calendar
 import datetime
 
@@ -50,8 +47,6 @@ import matplotlib.pyplot as plt
 #!pip install seaborn --upgrade
 import seaborn as sns
 #sns.set_style('darkgrid')
-
-from scipy.stats.mstats import winsorize
 
 from sklearn.impute import SimpleImputer
 
@@ -133,10 +128,6 @@ def gener_idcommande(datedebut,datefin):
    return int((response1.get('elaboreProduitAvecDemandeResponse')).get('return'))
 
 
-#focntion pour générer une base de données en choisissant les dates 
-
-
-
 
 #fonction pour représenter la carte
 
@@ -199,3 +190,7 @@ from sklearn.preprocessing import StandardScaler
 from tensorflow import keras
 from tensorflow import nn
 import statsmodels.api as sm
+
+#Compilation du main
+import nbformat
+from nbconvert.preprocessors import ExecutePreprocessor
